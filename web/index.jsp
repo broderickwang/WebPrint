@@ -22,5 +22,7 @@
     <a href="/JiaofeiExcelServlet">缴费表导出EXCEL</a><br>
     <a href="/JiaofeiWordServlet">缴费表导出Word</a><br>
     <a href="/SaleReportChart">销售报表总结（有chart）</a><br>
+    <a href="/Taoda">套打</a><br>
+    <a href="/Fapiao">发票</a>
   </body>
 </html>

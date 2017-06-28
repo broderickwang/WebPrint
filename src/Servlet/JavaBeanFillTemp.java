@@ -1,14 +1,11 @@
 package Servlet;
 
-import Jasper.JasperHelper;
-import Jasper.PrintType;
+import JasperUtil.JasperHelper;
+import JasperUtil.PrintType;
 import bean.DataBean;
-import util.DataBeanList;
+import util.BeanList;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,7 +25,7 @@ public class JavaBeanFillTemp extends HttpServlet {
 
             Map parameters = new HashMap();
 
-            DataBeanList dataList = new DataBeanList();
+            BeanList dataList = new BeanList();
             ArrayList<DataBean> datas = dataList.getDataBeanList();
 
             JasperHelper.export(PrintType.HTML_TYPE,

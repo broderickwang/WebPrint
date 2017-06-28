@@ -39,6 +39,14 @@
         <servlet-name>SaleReportChart</servlet-name>
         <servlet-class>Servlet.SaleReportChart</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TaodaServlet</servlet-name>
+        <servlet-class>Servlet.TaodaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FapiaoServlet</servlet-name>
+        <servlet-class>Servlet.FapiaoServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>ExportHTML</servlet-name>
@@ -75,5 +83,13 @@
     <servlet-mapping>
         <servlet-name>SaleReportChart</servlet-name>
         <url-pattern>/SaleReportChart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TaodaServlet</servlet-name>
+        <url-pattern>/Taoda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FapiaoServlet</servlet-name>
+        <url-pattern>/Fapiao</url-pattern>
     </servlet-mapping>
 </web-app>

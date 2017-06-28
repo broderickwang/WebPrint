@@ -1,7 +1,7 @@
 package Servlet;
 
-import Jasper.JasperHelper;
-import Jasper.PrintType;
+import JasperUtil.JasperHelper;
+import JasperUtil.PrintType;
 import org.apache.commons.collections.map.HashedMap;
 import util.Utils;
 

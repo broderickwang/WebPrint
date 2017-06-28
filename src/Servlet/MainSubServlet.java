@@ -1,7 +1,7 @@
 package Servlet;
 
-import Jasper.JasperHelper;
-import Jasper.PrintType;
+import JasperUtil.JasperHelper;
+import JasperUtil.PrintType;
 import util.Utils;
 
 import javax.servlet.ServletException;

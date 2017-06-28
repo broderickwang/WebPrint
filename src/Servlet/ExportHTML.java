@@ -1,7 +1,7 @@
 package Servlet;
 
-import Jasper.JasperHelper;
-import Jasper.PrintType;
+import JasperUtil.JasperHelper;
+import JasperUtil.PrintType;
 import net.sf.jasperreports.engine.JasperReport;
 import util.Utils;
 
