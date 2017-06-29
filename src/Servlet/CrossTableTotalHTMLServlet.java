@@ -25,10 +25,6 @@ public class CrossTableTotalHTMLServlet extends HttpServlet {
 
             Map parameters = new HashMap();
 
-            System.out.println("PATH:="+this.getServletContext().getRealPath("/"));
-            JasperHelper jasperHelper = new JasperHelper();
-            System.out.println("PATH2:="+jasperHelper.getPath());
-
             JasperHelper.export(PrintType.HTML_TYPE,
                     this.getServletContext().getRealPath("/")+"crosstable",reportFile,
                     parameters, Utils.getConnection(),response);

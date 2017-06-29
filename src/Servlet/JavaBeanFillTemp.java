@@ -1,5 +1,6 @@
 package Servlet;
 
+import Jasper.JRHelper;
 import JasperUtil.JasperHelper;
 import JasperUtil.PrintType;
 import bean.DataBean;
@@ -28,9 +29,16 @@ public class JavaBeanFillTemp extends HttpServlet {
             BeanList dataList = new BeanList();
             ArrayList<DataBean> datas = dataList.getDataBeanList();
 
-            JasperHelper.export(PrintType.HTML_TYPE,
+            /*JasperHelper.export(PrintType.HTML_TYPE,
                     this.getServletContext().getRealPath("/")+"template",reportFile,parameters,
-                    datas, response);
+                    datas, response);*/
+            new JRHelper.Builder()
+                    .response(response)
+                    .outName(this.getServletContext().getRealPath("/")+"template")
+                    .type(PrintType.HTML_TYPE)
+                    .collection(datas)
+                    .jasperFile(reportFile)
+                    .build();
 
         }catch (Exception e) {
             // TODO Auto-generated catch block
