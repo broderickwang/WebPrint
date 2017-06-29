@@ -1,5 +1,6 @@
 package Servlet;
 
+import Jasper.JRHelper;
 import JasperUtil.JasperHelper;
 import JasperUtil.PrintType;
 import util.Utils;
@@ -23,11 +24,18 @@ public class CrossTableTotalHTMLServlet extends HttpServlet {
             File reportFile = new File(this.getServletContext()
                     .getRealPath("jasper/CrossReport.jasper"));
 
-            Map parameters = new HashMap();
+            /*Map parameters = new HashMap();
 
             JasperHelper.export(PrintType.HTML_TYPE,
                     this.getServletContext().getRealPath("/")+"crosstable",reportFile,
-                    parameters, Utils.getConnection(),response);
+                    parameters, Utils.getConnection(),response);*/
+            new JRHelper.Builder()
+                    .connection(Utils.getConnection())
+                    .jasperFile(reportFile)
+                    .type(PrintType.HTML_TYPE)
+                    .outName(this.getServletContext().getRealPath("/")+"crosstable")
+                    .response(response)
+                    .build();
 
         }catch (Exception e) {
             // TODO Auto-generated catch block
