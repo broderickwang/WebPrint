@@ -55,7 +55,7 @@ JRHelper helper = new JRHelper.Builder()
 
 > PrintType是HTML_TYPE的时候，outName的设置需要带上路径
 >
-> collection() 和 connection()只能调用其中一个，并且仅能调用一个，不能同时调用
+> collection() 和 connection()必须调用其中一个，并且仅能调用一个，不能同时调用
 >
 > outName的设置不行要带后缀名
 >
