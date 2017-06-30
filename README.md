@@ -28,7 +28,7 @@ public enum PrintType {
 }
 ```
 
-模板设计请参考JasperStudio
+模板设计请参考[JasperStudio](http://community.jaspersoft.com/documentation/tibco-jaspersoft-studio-user-guide/v621/getting-started-jaspersoft-studio)
 
 
 
