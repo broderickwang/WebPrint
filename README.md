@@ -10,6 +10,7 @@ File jasperFile=new File(this.getServletContext()
         .getRealPath("jasper/taoda.jasper"));
 JasperHelper.export(PrintType.PDF_IO_TYPE,null,jasperFile,paramers,
         list.getTaodaBeanList(),response);
+//该方法已过时
 ```
 
 PrintType是打印类型枚举，如下
@@ -54,9 +55,11 @@ JRHelper helper = new JRHelper.Builder()
 
 > PrintType是HTML_TYPE的时候，outName的设置需要带上路径
 >
-> collection() 和 connection()只能调用其中一个，并且只能调用一个，不能同时调用
+> collection() 和 connection()只能调用其中一个，并且仅能调用一个，不能同时调用
 >
 > outName的设置不行要带后缀名
+>
+> addP()是给模板添加参数的，如果模板没有参数可以不调用
 >
 > bulid（）方法只能最后调用，是最后的输出。
 

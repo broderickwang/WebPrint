@@ -1,5 +1,6 @@
 package util;
 
+import bean.ChengjiBean;
 import bean.DataBean;
 import bean.FapiaoBean;
 import bean.TaodaBean;
@@ -42,6 +43,34 @@ public class BeanList {
         TaodaBean bean = new TaodaBean();
         bean.setTest1(test1);
         bean.setTest2(test2);
+        return bean;
+    }
+
+    public static ArrayList<ChengjiBean> getChengji(){
+        ArrayList<ChengjiBean> chengjis = new ArrayList<>();
+
+        for (int i=0;i<10;i++){
+            chengjis.add(BeanList.fillChengji(i+1));
+        }
+        return chengjis;
+    }
+
+    public static ChengjiBean fillChengji(int index ){
+        ChengjiBean bean = new ChengjiBean();
+        bean.setName("name"+index);
+        bean.setXuehao("201730200"+index);
+        bean.setPaiming(""+index);
+
+        bean.setYuwen(87.1f+index);
+        bean.setShuxue(76.9f);
+        bean.setYingyu(99);
+        bean.setShengwu(78.5f);
+        bean.setWuli(98);
+        bean.setHuaxue(77.3f);
+
+        bean.setPaiming(""+index);
+        bean.setPingjunfen(87f);
+        bean.setZuigaokemu("英语");
         return bean;
     }
 

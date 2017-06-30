@@ -47,6 +47,10 @@
         <servlet-name>FapiaoServlet</servlet-name>
         <servlet-class>Servlet.FapiaoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ChengjiServlet</servlet-name>
+        <servlet-class>Servlet.ChengjiServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>ExportHTML</servlet-name>
@@ -91,5 +95,9 @@
     <servlet-mapping>
         <servlet-name>FapiaoServlet</servlet-name>
         <url-pattern>/Fapiao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChengjiServlet</servlet-name>
+        <url-pattern>/Chengji</url-pattern>
     </servlet-mapping>
 </web-app>
